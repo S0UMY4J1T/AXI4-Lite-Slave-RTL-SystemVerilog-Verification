@@ -1,6 +1,7 @@
 # AXI4-Lite Slave RTL & SystemVerilog Verification
 
 A Verilog implementation of an **AXI4-Lite Slave** with a **128 × 32-bit internal memory**, verified using a class-based SystemVerilog testbench.
+A Bonus Verilog testbench is also there to check the DUT Design initially.
 
 ## Overview
 
@@ -21,9 +22,9 @@ Generator
     │
     ▼
  Driver ──────► AXI4-Lite Slave ──────► Monitor
-                                      │
-                                      ▼
-                                  Scoreboard
+                                          │
+                                          ▼
+                                      Scoreboard
 ```
 
 ## DUT Specifications
@@ -85,10 +86,9 @@ Example:
 
 ```text
 AXI4-Lite-Slave/
-├── rtl/
-│   └── axilite_s.v
-├── tb/
-│   └── tb.sv
+├── code.v
+├── testV.v
+├── test.sv
 └── README.md
 ```
 
